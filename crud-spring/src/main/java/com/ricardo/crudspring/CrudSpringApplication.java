@@ -1,7 +1,7 @@
 package com.ricardo.crudspring;
 
 import com.ricardo.crudspring.repository.CourseRepository;
-import model.Course;
+import com.ricardo.crudspring.model.Course;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

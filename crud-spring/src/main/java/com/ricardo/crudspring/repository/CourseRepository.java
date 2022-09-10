@@ -1,6 +1,6 @@
 package com.ricardo.crudspring.repository;
 
-import model.Course;
+import com.ricardo.crudspring.model.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
