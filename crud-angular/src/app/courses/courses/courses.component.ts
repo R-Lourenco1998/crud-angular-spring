@@ -14,7 +14,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CoursesComponent implements OnInit {
   courses$: Observable<Course[]>;
-  displayedColumns = ['name', 'category', 'actions'];
 
   //courseService: CoursesService;
   constructor(
@@ -27,7 +26,7 @@ export class CoursesComponent implements OnInit {
     //this.courseService = new CoursesService();
     this.courses$ = this.coursesService.list().pipe(
       catchError((error) => {
-       this.onError('Erro ao carregar Cursos.')
+        this.onError('Erro ao carregar Cursos.');
         return of([]);
       })
     );
@@ -39,10 +38,9 @@ export class CoursesComponent implements OnInit {
     });
   }
 
-
   ngOnInit(): void {}
 
-  onAdd(){
-    this.router.navigate(['new'], {relativeTo: this.activateRoute});
+  onAdd() {
+    this.router.navigate(['new'], { relativeTo: this.activateRoute });
   }
 }
