@@ -25,7 +25,6 @@ export class CourseFormComponent implements OnInit {
     private snackBar: MatSnackBar,
     private location: Location,
     private route: ActivatedRoute) {
-    //this.form
    }
 
   ngOnInit(): void {
